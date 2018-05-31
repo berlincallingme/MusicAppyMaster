@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/portgual"
+        android:text="@string/portugal"
+        style="@style/BandCategoryStyle"
+        android:background="@color/category_portugal"/>
+
+    <TextView
+        android:id="@+id/depeche"
+        style="@style/BandCategoryStyle"
+        android:background="@color/category_depeche"
+        android:text="@string/depeche_mode" />
+
+    <TextView
+        android:id="@+id/altj"
+        style="@style/BandCategoryStyle"
+        android:background="@color/category_altj"
+        android:text="@string/altj" />
+
+    <TextView
+        android:id="@+id/grimes"
+        style="@style/BandCategoryStyle"
+        android:background="@color/category_grimes"
+        android:text="@string/grimes" />
+
+</LinearLayout>

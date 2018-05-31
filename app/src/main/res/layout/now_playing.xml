@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nowPlayingPicHeight"
+        android:src="@drawable/hipster_music"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bandName"
+        android:textSize="@dimen/textSizes"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentSong"
+        android:textSize="@dimen/textSizes"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/rwd"
+            android:id="@+id/rwd"
+            android:layout_marginLeft="100dp"
+
+            />
+        <ImageView
+            android:src="@drawable/pause"
+            android:layout_toRightOf="@+id/rwd"
+            android:id="@+id/pause"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:src="@drawable/ffw"
+            android:layout_toRightOf="@+id/pause"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

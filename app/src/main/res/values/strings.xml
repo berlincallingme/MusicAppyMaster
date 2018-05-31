@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">MusicAppy</string>
+    <string name="portugal">Portugal The Man</string>
+    <string name="depeche_mode">Depeche Mode</string>
+    <string name="altj">Alt-J</string>
+    <string name="grimes">Grimes</string>
+    <string name="enjoy_the_silence">Enjoy The Silence</string>
+    <string name="precious">Precious</string>
+    <string name="useles">Useles</string>
+    <string name="feelitstill">Feel It Still</string>
+    <string name="purple">Purple Yellow Red And Blue</string>
+    <string name="keep_on">Keep On</string>
+    <string name="breezeblocks">Breezeblocks</string>
+    <string name="matilda">Matilda</string>
+    <string name="left_hand_free">Left Hand Free</string>
+    <string name="genesis">Genesis</string>
+    <string name="realiti">Realiti</string>
+    <string name="venusfly">Venus Fly</string>
+
+
+
+</resources>
