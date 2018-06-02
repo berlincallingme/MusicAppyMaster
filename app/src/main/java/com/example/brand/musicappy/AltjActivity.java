@@ -1,8 +1,11 @@
 package com.example.brand.musicappy;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,7 +18,7 @@ public class AltjActivity  extends AppCompatActivity {
         setContentView(R.layout.song_list);
 
         // Create a list of words
-        ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Breezeblocks", "Alt-J"));
         songs.add(new Song("Matilda", "Alt-J"));
         songs.add(new Song("Left Hand Free", "Alt-J"));
@@ -32,5 +35,19 @@ public class AltjActivity  extends AppCompatActivity {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
+        final ListView list = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Song song = songs.get(position);
+                String songName = song.getSongName();
+                String bandName = song.getBandName();
+                Intent intent = new Intent(AltjActivity.this, NowPlayingActivity.class);
+                intent.putExtra("song name", songName);
+                intent.putExtra ("band name", bandName);
+                startActivity(intent);
+            }
+        });
+
     }
 }

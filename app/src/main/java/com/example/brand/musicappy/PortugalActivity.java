@@ -18,7 +18,7 @@ public class PortugalActivity  extends AppCompatActivity {
         setContentView(R.layout.song_list);
 
         // Create a list of words
-        ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Feel It Still", "Portugal The Man"));
         songs.add(new Song("Purple Yellow Red And Blue", "Portugal The Man"));
         songs.add(new Song("Keep On", "Portugal The Man"));
@@ -37,6 +37,20 @@ public class PortugalActivity  extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
+
+        final ListView list = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Song song = songs.get(position);
+                String songName = song.getSongName();
+                String bandName = song.getBandName();
+                Intent intent = new Intent(PortugalActivity.this, NowPlayingActivity.class);
+                intent.putExtra("song name", songName);
+                intent.putExtra ("band name", bandName);
+                startActivity(intent);
+            }
+        });
     }
 
 

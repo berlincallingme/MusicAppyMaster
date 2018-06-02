@@ -2,7 +2,9 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/category_grimes"
+    >
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/nowPlayingPicHeight"
@@ -33,7 +35,7 @@
             android:layout_height="50sp"
             android:src="@drawable/rwd"
             android:id="@+id/rwd"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="100sp"
 
             />
         <ImageView

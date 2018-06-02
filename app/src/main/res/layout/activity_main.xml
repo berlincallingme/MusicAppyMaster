@@ -7,6 +7,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hipster_band"
+        style="@style/BandCategoryStyle"
+        android:background="@color/category_pick"
+        />
     <TextView
         android:id="@+id/portgual"
         android:text="@string/portugal"
@@ -30,5 +39,11 @@
         style="@style/BandCategoryStyle"
         android:background="@color/category_grimes"
         android:text="@string/grimes" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/portugalpic"
+        />
 
 </LinearLayout>
