@@ -5,6 +5,11 @@
     android:orientation="vertical"
     android:background="@color/category_grimes"
     >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_child_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/nowPlayingPicHeight"
@@ -53,6 +58,7 @@
             android:layout_width="50sp"
             android:layout_height="50sp"
             />
+
     </RelativeLayout>
 
 </LinearLayout>

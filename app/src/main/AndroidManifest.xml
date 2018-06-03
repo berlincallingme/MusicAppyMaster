@@ -30,7 +30,10 @@
             android:label="@string/grimes" />
         <activity
             android:name=".NowPlayingActivity"
-            android:label="@string/now_playing" />
+            android:label="@string/now_playing"
+            android:parentActivityName=".MainActivity"
+            />
+
     </application>
 
 </manifest>
